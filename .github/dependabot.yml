@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: Microsoft.AspNetCore.Identity.EntityFrameworkCore
+    versions:
+    - 5.0.2
+  - dependency-name: Microsoft.Extensions.Configuration.AzureKeyVault
+    versions:
+    - 3.1.11
+  - dependency-name: Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore
+    versions:
+    - 5.0.2
+  - dependency-name: MongoDB.Driver
+    versions:
+    - 2.11.6
+  - dependency-name: Microsoft.AspNetCore.Mvc.NewtonsoftJson
+    versions:
+    - 5.0.2
+  - dependency-name: Grpc.Net.Client
+    versions:
+    - 2.34.0
